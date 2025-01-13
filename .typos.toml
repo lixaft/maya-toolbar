@@ -1,0 +1,9 @@
+[default]
+local = "en-us"
+extend-ignore-re = [
+    # Ignore line with trailing: `typos: ignore`.
+    "(?Rm)^.*(#|//)\\s*typos: ?ignore$",
+
+    # Ignore block with: `typos: <on|off>`.
+    "(?s)(#|//)\\s*typos: ?off.*?\\n\\s*(#|//)\\s*typos: ?on",
+]

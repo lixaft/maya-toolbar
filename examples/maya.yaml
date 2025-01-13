@@ -1,0 +1,1026 @@
+name: maya
+load: true
+categories:
+  - name: Curves
+    open: true
+    commands:
+      - name: NURBS Circle
+        callback: maya.cmds:CreateNURBSCircle
+        icon: :circle.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateNURBSCircleOptions
+      - name: NURBS Square
+        callback: maya.cmds:CreateNURBSSquare
+        icon: :square.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateNURBSSquareOptions
+      - name: EP Curve Tool
+        callback: maya.cmds:EPCurveTool
+        icon: :curveEP.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:EPCurveToolOptions
+      - name: Pencil Curve Tool
+        callback: maya.cmds:PencilCurveTool
+        icon: :pencil.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:PencilCurveToolOptions
+      - name: Three Point Circular Arc
+        callback: maya.cmds:ThreePointArcTool
+        icon: :threePointArc.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ThreePointArcToolOptions
+      - name: Attach Curves
+        callback: maya.cmds:AttachCurve
+        icon: :attachCurves.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:AttachCurveOptions
+      - name: Detach Curves
+        callback: maya.cmds:DetachCurve
+        icon: :detachCurve.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:DetachCurveOptions
+      - name: Insert Knot
+        callback: maya.cmds:InsertKnot
+        icon: :insertKnot.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:InsertKnotOptions
+      - name: Extend Curve
+        callback: maya.cmds:ExtendCurve
+        icon: :extend.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ExtendCurveOptions
+      - name: Offset Curve
+        callback: maya.cmds:OffsetCurve
+        icon: :offsetCurve.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:OffsetCurveOptions
+      - name: Rebuild Curve
+        callback: maya.cmds:RebuildCurve
+        icon: :rebuildCurve.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:RebuildCurveOptions
+      - name: Add Points Tool
+        callback: maya.cmds:AddPointsTool
+        icon: :curveAddPt.png
+      - name: Curve Editing Tool
+        callback: maya.cmds:CurveEditTool
+        icon: :curveEditor.png
+      - name: Bezier Curve Tool
+        callback: maya.cmds:CreateBezierCurveTool
+        icon: :curveBezier.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateBezierCurveToolOptions
+  - name: Surfaces
+    open: true
+    commands:
+      - name: NURBS Sphere
+        callback: maya.cmds:CreateNURBSSphere
+        icon: :sphere.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateNURBSSphereOptions
+      - name: NURBS Cube
+        callback: maya.cmds:CreateNURBSCube
+        icon: :cube.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateNURBSCubeOptions
+      - name: NURBS Cylinder
+        callback: maya.cmds:CreateNURBSCylinder
+        icon: :cylinder.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateNURBSCylinderOptions
+      - name: NURBS Cone
+        callback: maya.cmds:CreateNURBSCone
+        icon: :cone.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateNURBSConeOptions
+      - name: NURBS Plane
+        callback: maya.cmds:CreateNURBSPlane
+        icon: :plane.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateNURBSPlaneOptions
+      - name: NURBS Torus
+        callback: maya.cmds:CreateNURBSTorus
+        icon: :torus.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateNURBSTorusOptions
+      - name: Revolve
+        callback: maya.cmds:Revolve
+        icon: :revolve.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:RevolveOptions
+      - name: Loft
+        callback: maya.cmds:Loft
+        icon: :skin.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:LoftOptions
+      - name: Planar
+        callback: maya.cmds:Planar
+        icon: :planarTrim.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:PlanarOptions
+      - name: Extrude
+        callback: maya.cmds:Extrude
+        icon: :extrude.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ExtrudeOptions
+      - name: Birail 1 Tool
+        callback: maya.cmds:Birail1
+        icon: :birail1Gen.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:Birail1Options
+      - name: Bevel Plus
+        callback: maya.cmds:BevelPlus
+        icon: :bevelPlus.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:BevelPlusOptions
+      - name: Project Curve on Surface
+        callback: maya.cmds:ProjectCurveOnSurface
+        icon: :projectCurve.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ProjectCurveOnSurfaceOptions
+      - name: Intersect Surfaces
+        callback: maya.cmds:IntersectSurfaces
+        icon: :srfIntersect.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:IntersectSurfacesOptions
+      - name: Trim Tool
+        callback: maya.cmds:TrimTool
+        icon: :trim.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:TrimToolOptions
+      - name: Untrim Surfaces
+        callback: maya.cmds:UntrimSurfaces
+        icon: :untrim.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:UntrimSurfacesOptions
+      - name: Attach Surfaces
+        callback: maya.cmds:AttachSurfaces
+        icon: :align.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:AttachSurfacesOptions
+      - name: Detach Surfaces
+        callback: maya.cmds:DetachSurfaces
+        icon: :detach.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:DetachSurfacesOptions
+      - name: Open/Close Surfaces
+        callback: maya.cmds:OpenCloseSurfaces
+        icon: :openCloseSurface.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:OpenCloseSurfacesOptions
+      - name: Insert Isoparms
+        callback: maya.cmds:InsertIsoparms
+        icon: :insert.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:InsertIsoparmsOptions
+      - name: Extend Surfaces
+        callback: maya.cmds:ExtendSurfaces
+        icon: :extendSurface.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ExtendSurfacesOptions
+      - name: Rebuild Surfaces
+        callback: maya.cmds:RebuildSurfaces
+        icon: :rebuildSurface.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:RebuildSurfacesOptions
+      - name: Sculpt Geometry Tool
+        callback: maya.cmds:SculptGeometryTool
+        icon: :putty.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:SculptGeometryToolOptions
+      - name: Surface Editing Tool
+        callback: maya.cmds:SurfaceEditingTool
+        icon: :surfaceEditor.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:SurfaceEditingToolOptions
+  - name: Polygons
+    open: true
+    commands:
+      - name: Polygon Sphere
+        callback: maya.cmds:CreatePolygonSphere
+        icon: :polySphere.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreatePolygonSphereOptions
+      - name: Polygon Cube
+        callback: maya.cmds:CreatePolygonCube
+        icon: :polyCube.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreatePolygonCubeOptions
+      - name: Polygon Cylinder
+        callback: maya.cmds:CreatePolygonCylinder
+        icon: :polyCylinder.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreatePolygonCylinderOptions
+      - name: Polygon Cone
+        callback: maya.cmds:CreatePolygonCone
+        icon: :polyCone.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreatePolygonConeOptions
+      - name: Polygon Torus
+        callback: maya.cmds:CreatePolygonTorus
+        icon: :polyTorus.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreatePolygonTorusOptions
+      - name: Polygon Plane
+        callback: maya.cmds:CreatePolygonPlane
+        icon: :polyMesh.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreatePolygonPlaneOptions
+      - name: Polygon Disc
+        callback: maya.cmds:CreatePolygonDisc
+        icon: :polyDisc.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreatePolygonDiscOptions
+      - name: Platonic Solid
+        callback: maya.cmds:CreatePolygonPlatonic
+        icon: :polyPlatonicSolid.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreatePolygonPlatonicOptions
+      - name: Super Shape
+        callback: maya.cmds:CreatePolygonSuperEllipse
+        icon: :polySuperEllipse.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreatePolygonSuperEllipseOptions
+      - name: Sweep Mesh
+        callback: maya.cmds:CreateSweepMesh
+        icon: :shelf_sweepMeshFromCurve.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateSweepMeshOptions
+      - name: Polygon Type
+        callback: maya.cmds:CreatePolygonType
+        icon: :polyType.png
+      - name: SVG
+        callback: maya.cmds:CreatePolygonSVG
+        icon: :polySVG.png
+      - name: Content Browser
+        callback: maya.cmds:OpenContentBrowser
+        icon: :contentBrowserGeneric.png
+      - name: Center Pivot
+        callback: maya.cmds:CenterPivot
+        icon: :CenterPivot.png
+      - name: 'Delete By Type: History'
+        callback: maya.cmds:DeleteHistory
+        icon: :DeleteHistory.png
+      - name: Freeze Transformations
+        callback: maya.cmds:FreezeTransformations
+        icon: :FreezeTransform.png
+      - name: Difference (A - B)
+        callback: maya.cmds:PolygonBooleanDifference
+        icon: :polyBooleansDifference.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:PolygonBooleanDifferenceOptions
+      - name: Combine
+        callback: maya.cmds:CombinePolygons
+        icon: :polyUnite.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CombinePolygonsOptions
+      - name: Extract
+        callback: maya.cmds:ExtractFace
+        icon: :polyChipOff.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ExtractFaceOptions
+      - name: Mirror
+        callback: maya.cmds:MirrorPolygonGeometry
+        icon: :polyMirrorGeometry.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:MirrorPolygonGeometryOptions
+      - name: Smooth
+        callback: maya.cmds:SmoothPolygon
+        icon: :polySmooth.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:SmoothPolygonOptions
+      - name: Reduce
+        callback: maya.cmds:ReducePolygon
+        icon: :polyReduce.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ReducePolygonOptions
+      - name: Remesh
+        callback: maya.cmds:PolyRemesh
+        icon: :polyRemesh.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:PolyRemeshOptions
+      - name: Retopologize
+        callback: maya.cmds:PolyRetopo
+        icon: :polyRetopo.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:PolyRetopoOptions
+      - name: Extrude
+        callback: maya.cmds:PolyExtrude
+        icon: :polyExtrudeFacet.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:PolyExtrudeOptions
+      - name: Merge
+        callback: maya.cmds:PolyMerge
+        icon: :polyMerge.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:PolyMergeOptions
+      - name: Merge To Center
+        callback: maya.cmds:MergeToCenter
+        icon: :polyMergeToCenter.png
+      - name: Flip Triangle Edge
+        callback: maya.cmds:FlipTriangleEdge
+        icon: :polyFlipEdge.png
+      - name: Duplicate
+        callback: maya.cmds:DuplicateFace
+        icon: :polyDuplicateFacet.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:DuplicateFaceOptions
+      - name: Collapse
+        callback: maya.cmds:PolygonCollapse
+        icon: :polyCollapseEdge.png
+      - name: Circularize
+        callback: maya.cmds:PolyCircularize
+        icon: :polyCircularize.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:PolyCircularizeOptions
+      - name: Multi-Cut Tool
+        callback: maya.cmds:dR_multiCutTool
+        icon: :multiCut_NEX32.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:dR_multiCutTool; toolPropertyWindow;
+      - name: Target Weld Tool
+        callback: maya.cmds:MergeVertexTool
+        icon: :weld_NEX32.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:MergeVertexToolOptions
+      - name: Quad Draw Tool
+        callback: maya.cmds:dR_quadDrawTool
+        icon: :quadDraw_NEX32.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:dR_quadDrawTool; toolPropertyWindow;
+  - name: Sculpting
+    open: true
+    commands:
+      - name: Sculpt Tool
+        callback: maya.cmds:SetMeshSculptTool
+        icon: :Sculpt.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshSculptToolOptions
+      - name: Smooth Tool
+        callback: maya.cmds:SetMeshSmoothTool
+        icon: :Smooth.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshSmoothToolOptions
+      - name: Relax Tool
+        callback: maya.cmds:SetMeshRelaxTool
+        icon: :Relax.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshRelaxToolOptions
+      - name: Grab Tool
+        callback: maya.cmds:SetMeshGrabTool
+        icon: :Grab.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshGrabToolOptions
+      - name: Pinch Tool
+        callback: maya.cmds:SetMeshPinchTool
+        icon: :Pinch.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshPinchToolOptions
+      - name: Flatten Tool
+        callback: maya.cmds:SetMeshFlattenTool
+        icon: :Flatten.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshFlattenToolOptions
+      - name: Foamy Tool
+        callback: maya.cmds:SetMeshFoamyTool
+        icon: :Foamy.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshFoamyToolOptions
+      - name: Spray Tool
+        callback: maya.cmds:SetMeshSprayTool
+        icon: :Spray.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshSprayToolOptions
+      - name: Repeat Tool
+        callback: maya.cmds:SetMeshRepeatTool
+        icon: :Repeat.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshRepeatToolOptions
+      - name: Imprint Tool
+        callback: maya.cmds:SetMeshImprintTool
+        icon: :Imprint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshImprintToolOptions
+      - name: Wax Tool
+        callback: maya.cmds:SetMeshWaxTool
+        icon: :Wax.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshWaxToolOptions
+      - name: Scrape Tool
+        callback: maya.cmds:SetMeshScrapeTool
+        icon: :Scrape.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshScrapeToolOptions
+      - name: Fill Tool
+        callback: maya.cmds:SetMeshFillTool
+        icon: :Fill.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshFillToolOptions
+      - name: Knife Tool
+        callback: maya.cmds:SetMeshKnifeTool
+        icon: :Knife.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshKnifeToolOptions
+      - name: Smear Tool
+        callback: maya.cmds:SetMeshSmearTool
+        icon: :Smear.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshSmearToolOptions
+      - name: Bulge Tool
+        callback: maya.cmds:SetMeshBulgeTool
+        icon: :Bulge.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshBulgeToolOptions
+      - name: Amplify Tool
+        callback: maya.cmds:SetMeshAmplifyTool
+        icon: :Amplify.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshAmplifyToolOptions
+      - name: Freeze Tool
+        callback: maya.cmds:SetMeshFreezeTool
+        icon: :Freeze.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshFreezeToolOptions
+      - name: Convert To Frozen
+        callback: maya.cmds:ConvertToFrozen
+        icon: :freezeSelected.png
+      - name: Base Meshes
+        callback: maya.cmds:OpenVisorForMeshes
+        icon: :contentBrowserGeneric.png
+      - name: Shape Editor
+        callback: maya.cmds:ShapeEditor
+        icon: :blendShapeEditor.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateBlendShapeOptions
+      - name: Pose Editor
+        callback: maya.cmds:PoseEditor
+        icon: :poseEditor.png
+      - name: Smooth Target Tool
+        callback: maya.cmds:SetMeshSmoothTargetTool
+        icon: :SmoothTarget.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshSmoothTargetToolOptions
+      - name: Clone Target Tool
+        callback: maya.cmds:SetMeshCloneTargetTool
+        icon: :CloneTarget.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshCloneTargetToolOptions
+      - name: Mask Target Tool
+        callback: maya.cmds:SetMeshMaskTool
+        icon: :Mask.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshMaskToolOptions
+      - name: Erase Target Tool
+        callback: maya.cmds:SetMeshEraseTool
+        icon: :Erase.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshEraseToolOptions
+  - name: UVEditing
+    open: true
+    commands:
+      - name: Contour Stretch
+        callback: maya.cmds:UVContourStretchProjection
+        icon: :polyContourProjLarge.png
+      - name: 3D Grab UV Tool
+        callback: maya.cmds:SetMeshGrabUVTool
+        icon: :UV_3D_Grab_Brush.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ShowMeshGrabUVToolOptions
+      - name: 3D Cut and Sew UV Tool
+        callback: maya.cmds:SetCutSewUVTool
+        icon: :CutSewUVTool.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:SetCutSewUVTool;toolPropertyWindow;
+      - name: UV Editor...
+        callback: maya.cmds:TextureViewWindow
+        icon: :textureEditor.png
+  - name: Rigging
+    open: true
+    commands:
+      - name: Create Locator
+        callback: maya.cmds:CreateLocator
+        icon: :locator.png
+      - name: Create Joints
+        callback: maya.cmds:JointTool
+        icon: :kinJoint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:JointToolOptions
+      - name: Create IK Handle
+        callback: maya.cmds:IKHandleTool
+        icon: :kinHandle.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:IKHandleToolOptions
+      - name: Bind Skin
+        callback: maya.cmds:SmoothBindSkin
+        icon: :smoothSkin.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:SmoothBindSkinOptions
+      - name: Quick Rig
+        callback: maya.cmds:QuickRigEditor
+        icon: :QR_QuickRigTool.png
+      - name: Human IK
+        callback: maya.cmds:HIKCharacterControlsTool
+        icon: :humanIK_CharCtrl.png
+      - name: Paint Skin Weights
+        callback: maya.cmds:ArtPaintSkinWeightsTool
+        icon: :paintSkinWeights.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ArtPaintSkinWeightsToolOptions
+      - name: Blend Shapes
+        callback: maya.cmds:CreateBlendShape
+        icon: :blendShape.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateBlendShapeOptions
+      - name: Create Lattice
+        callback: maya.cmds:CreateLattice
+        icon: :lattice.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateLatticeOptions
+      - name: Create Cluster
+        callback: maya.cmds:CreateCluster
+        icon: :cluster.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateClusterOptions
+      - name: Parent Constraint
+        callback: maya.cmds:ParentConstraint
+        icon: :parentConstraint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ParentConstraintOptions
+      - name: Point Constraint
+        callback: maya.cmds:PointConstraint
+        icon: :posConstraint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:PointConstraintOptions
+      - name: Orient Constraint
+        callback: maya.cmds:OrientConstraint
+        icon: :orientConstraint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:OrientConstraintOptions
+      - name: Scale Constraint
+        callback: maya.cmds:ScaleConstraint
+        icon: :scaleConstraint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ScaleConstraintOptions
+      - name: Aim Constraint
+        callback: maya.cmds:AimConstraint
+        icon: :aimConstraint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:AimConstraintOptions
+      - name: Pole Vector Constraint
+        callback: maya.cmds:PoleVectorConstraint
+        icon: :poleVectorConstraint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:PoleVectorConstraintOptions
+      - name: Set Key
+        callback: maya.cmds:SetKey
+        icon: :setKeyframe.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:SetKeyOptions
+      - name: Set Driven Key
+        callback: maya.cmds:SetDrivenKey
+        icon: :setDrivenKeyframe.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:SetDrivenKey
+  - name: Animation
+    open: true
+    commands:
+      - name: Playblast
+        callback: maya.cmds:PlayblastWindow
+        icon: :playblast.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:PlayblastOptions
+      - name: Motion Trail
+        callback: maya.cmds:CreateMotionTrail
+        icon: :motionTrail.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateMotionTrailOptions
+      - name: Ghost Selected
+        callback: maya.cmds:GhostSelected
+        icon: :ghost.png
+      - name: Unghost Selected
+        callback: maya.cmds:UnghostSelected
+        icon: :ghostOff.png
+      - name: Open Ghosting Editor
+        callback: maya.cmds:OpenGhostEditor
+        icon: :ghostingEditor.png
+      - name: Bake Animation
+        callback: maya.cmds:BakeSimulation
+        icon: :bakeAnimation.png
+      - name: Set Key
+        callback: maya.cmds:SetKey
+        icon: :setKeyframe.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:SetKeyOptions
+      - name: Set Key on Animated
+        callback: maya.cmds:SetKeyAnimated
+        icon: :setKeyOnAnim.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:SetKeyAnimatedOptions
+      - name: Set Key on Translate
+        callback: maya.cmds:SetKeyTranslate
+        icon: :setKeyOnTranslate.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:SetKeyTranslateOptions
+      - name: Set Key on Rotate
+        callback: maya.cmds:SetKeyRotate
+        icon: :setKeyOnRotate.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:SetKeyRotateOptions
+      - name: Set Key on Scale
+        callback: maya.cmds:SetKeyScale
+        icon: :setKeyOnScale.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:SetKeyScaleOptions
+      - name: Parent Constraint
+        callback: maya.cmds:ParentConstraint
+        icon: :parentConstraint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ParentConstraintOptions
+      - name: Point Constraint
+        callback: maya.cmds:PointConstraint
+        icon: :posConstraint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:PointConstraintOptions
+      - name: Orient Constraint
+        callback: maya.cmds:OrientConstraint
+        icon: :orientConstraint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:OrientConstraintOptions
+      - name: Scale Constraint
+        callback: maya.cmds:ScaleConstraint
+        icon: :scaleConstraint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:ScaleConstraintOptions
+      - name: Aim Constraint
+        callback: maya.cmds:AimConstraint
+        icon: :aimConstraint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:AimConstraintOptions
+      - name: Pole Vector Constraint
+        callback: maya.cmds:PoleVectorConstraint
+        icon: :poleVectorConstraint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:PoleVectorConstraintOptions
+  - name: Rendering
+    open: true
+    commands:
+      - name: Ambient Light
+        callback: maya.cmds:CreateAmbientLight
+        icon: :ambientlight.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateAmbientLightOptions
+      - name: Directional Light
+        callback: maya.cmds:CreateDirectionalLight
+        icon: :directionallight.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateDirectionalLightOptions
+      - name: Point Light
+        callback: maya.cmds:CreatePointLight
+        icon: :pointlight.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreatePointLightOptions
+      - name: Spot Light
+        callback: maya.cmds:CreateSpotLight
+        icon: :spotlight.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateSpotLightOptions
+      - name: Area Light
+        callback: maya.cmds:CreateAreaLight
+        icon: :arealight.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateAreaLightOptions
+      - name: Volume Light
+        callback: maya.cmds:CreateVolumeLight
+        icon: :volumelight.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateVolumeLightOptions
+      - name: Create Camera
+        callback: maya.cmds:CreateCameraOnly
+        icon: :view.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:CreateCameraOnlyOptions
+      - name: Edit Material Attributes
+        callback: maya.cmds:ShowShadingGroupAttributeEditor
+        icon: :materialEditor.png
+      - name: Render Diagnostics
+        callback: maya.cmds:RenderDiagnostics
+        icon: :renderDiagnostics.png
+      - name: Batch Render
+        callback: maya.cmds:BatchRender
+        icon: :batchRender.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:BatchRenderOptions
+      - name: Cancel Batch Render
+        callback: maya.cmds:CancelBatchRender
+        icon: :abortBatchRender.png
+      - name: Show Batch Render
+        callback: maya.cmds:ShowBatchRender
+        icon: :showBatchRender.png
+      - name: Render Sequence
+        callback: maya.cmds:RenderSequence
+        icon: :sequenceRender.png
+      - name: 3D Paint Tool
+        callback: maya.cmds:Art3dPaintTool
+        icon: :art3dPaint.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:Art3dPaintToolOptions
+  - name: FX
+    open: true
+    commands:
+      - name: Emitter
+        callback: maya.cmds:NCreateEmitter
+        icon: :posEmitter.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:NCreateEmitterOptions
+      - name: Add Emitter
+        callback: maya.cmds:NEmitFromObject
+        icon: :emitter.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:NEmitFromObjectOptions
+      - name: 3D Fluid Container with Emitter
+        callback: maya.cmds:Create3DContainerEmitter
+        icon: :fluidCreate3D.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:Create3DContainerEmitterOptions
+      - name: 2D Fluid Container with Emitter
+        callback: maya.cmds:Create2DContainerEmitter
+        icon: :fluidCreate2D.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:Create2DContainerEmitterOptions
+      - name: Emit Fluid from Object
+        callback: maya.cmds:EmitFluidFromObject
+        icon: :fluidObjectEmit.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:EmitFluidFromObjectOptions
+      - name: Make Collide
+        callback: maya.cmds:MakeFluidCollide
+        icon: :fluidCollide.png
+        menu:
+          items:
+            - name: Options
+              callback: maya.cmds:MakeFluidCollideOptions
+      - name: Create Hair
+        callback: maya.cmds:CreateHairOptions
+        icon: :hairCreate.png
+      - name: Make Selected Curves Dynamic
+        callback: maya.cmds:MakeCurvesDynamic
+        icon: :hairDynamicCurves.png
+      - name: Interactive playback
+        callback: maya.cmds:InteractivePlayback
+        icon: :interactivePlayback.png

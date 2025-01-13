@@ -1,0 +1,130 @@
+target-version = "py37"
+
+indent-width = 4
+line-length = 79
+
+extend-exclude = [
+    "src/maya_toolbar/_vendor",
+]
+
+[format]
+preview = true
+docstring-code-format = true
+
+quote-style = "double"
+indent-style = "space"
+
+[lint]
+select = [
+    "A",  # flake8-builtin
+    "ARG",  # flake8-unused-arguments
+    "B",  # flake8-bugbear
+    "BLE",  # flake8-blind-except
+    "C4",  # flake8-comprehensions
+    "COM",  # flake8-commas
+    "DTZ",  # flake8-datetimez
+    "E",  # pycodestyle (error)
+    "EM",  # flake8-errmsg
+    "ERA",  # eradicate
+    "EXE",  # flake8-executable
+    "F",  # pyflakes
+    "FA",  # flake8-future-annotations
+    "FLY",  # flynt
+    "G",  # flake8-logging-format
+    "I",  # isort
+    "ICN",  # flake8-import-conventions
+    "INP",  # flake8-no-pep420
+    "ISC",  # flake8-implicit-strconcat
+    "LOG",  # flake8-logging
+    "N",  # pep8-naming
+    "PERF",  # perflint
+    "PGH",  # pygrep-hooks
+    "PIE",  # flake8-pie
+    "PL",  # pylint
+    "PT",  # flake8-pytest-style
+    "PYI",  # flake8-pyi
+    "Q",  # flake8-quotes
+    "RET",  # flake8-return
+    "RSE",  # flake8-raise
+    "RUF",  # ruff
+    "SIM",  # flake8-simplify
+    "SLF",  # flake8-self
+    "SLOT",  # flake8-slots
+    "T10",  # flake8-debugger
+    "T20",  # flake8-print
+    "TC",  # flake8-type-checking
+    "TD",  # flake8-todos
+    "TID",  # flake8-tidy-imports
+    "TRY",  # tryceratops
+    "UP",  # pyupgrade
+    "W",  # pycodestyle (warning)
+    "YTT",  # flake8-2020
+]
+ignore = [
+    "D100",  # undocumented-public-module
+    "D107",  # undocumented-public-init
+    "PERF203",  # try-except-in-loop
+    "PLR0911",  # too-many-return-statements
+    "PLR0912",  # too-many-branches
+    "PLR0913", # too-many-arguments
+    "PLR0915", # too-many-statements
+    "SIM108",  # if-else-block-instead-of-if-exp
+    "TD002",  # missing-todo-author
+    "TD003",  # missing-todo-link
+    "PLR2004",  # magic-value-comparison
+
+    # Python2 compatibility.
+    "RUF005",  # collection-literal-concatenation
+    "RUF012",  # mutable-class-default
+    "SIM105",  # suppressible-exception
+    "SIM117",  # multiple-with-statements
+    "UP001",  # useless-metaclass-type
+    "UP004",  # useless-object-inheritance
+    "UP008",  # super-call-with-parameters
+    "UP010",  # unnecessary-future-import
+    "UP032",  # f-string
+
+    # Rule requirements.
+    "D203",  # one-blank-line-before-class (D211)
+    "D213",  # multi-line-summary-first-line (D212)
+
+    # Formatter requirements.
+    "COM812",  # missing-trailing-comma
+    "ISC001",  # single-line-implicit-string-concatenation
+]
+fixable = ["ALL"]
+
+task-tags = ["TODO"]
+
+[lint.per-file-ignores]
+"scripts/*.py" = [
+    "D",  # pydocstyle
+    "INP001",  # implicit-namespace-package
+]
+
+[lint.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[lint.isort]
+force-single-line = true
+required-imports = [
+    "from __future__ import absolute_import",
+    "from __future__ import division",
+    "from __future__ import print_function",
+]
+
+[lint.pep8-naming]
+extend-ignore-names = [
+    "addItem",
+    "hasHeightForWidth",
+    "heightForWidth",
+    "itemAt",
+    "minimumSize",
+    "mousePressEvent",
+    "setGeometry",
+    "sizeHint",
+    "takeAt",
+]
+
+[lint.pydocstyle]
+convention = "google"
